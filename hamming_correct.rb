@@ -5,12 +5,14 @@ def hamming(strand_1, strand_2)
   array2 = strand_2.split(//)
   columns = 0
   diff = 0
+
   while columns < 6
     if array1[columns] != array2[columns] && array1.length == array2.length
-      diff = diff + 1
+      diff = diff +1
     end
     columns = columns + 1
   end
+
   diff
 end
 
